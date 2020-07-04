@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>268</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>管理单词本</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 220, 244);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="5">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 220, 244);</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideRight</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>词汇数</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>创建日期</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="button_choose">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(0, 0, 101);
+background-color: rgb(255, 149, 206);</string>
+     </property>
+     <property name="text">
+      <string>选中(C)</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+C</string>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>240</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>70</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="button_create">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(0, 0, 101);
+background-color: rgb(255, 149, 206);</string>
+     </property>
+     <property name="text">
+      <string>新建(N)</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+N</string>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>240</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>70</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="button_change">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(0, 0, 101);
+background-color: rgb(255, 149, 206);</string>
+     </property>
+     <property name="text">
+      <string>修改(M)</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+M</string>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>240</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>70</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QPushButton" name="button_delete">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(0, 0, 101);
+background-color: rgb(255, 149, 206);</string>
+     </property>
+     <property name="text">
+      <string>删除(D)</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+D</string>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>240</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>70</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QPushButton" name="button_quit">
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(0, 0, 101);
+background-color: rgb(255, 149, 206);</string>
+     </property>
+     <property name="text">
+      <string>取消(Q)</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+Q</string>
+     </property>
+     <property name="autoRepeatDelay">
+      <number>240</number>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>70</number>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

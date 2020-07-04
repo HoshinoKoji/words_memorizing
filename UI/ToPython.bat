@@ -1,0 +1,1 @@
+pyuic5 -o mainwindow.py mainwindow.ui && pyuic5 -o manage_wordbooks.py manage_wordbooks.ui
